@@ -138,10 +138,10 @@ hands.onResults(onResults);
 new controls
     .ControlPanel(controlsElement, {
         selfieMode: true,
-        maxNumHands: 2,
-        modelComplexity: 1,
+        maxNumHands: 1,
+        modelComplexity: 0,
         minDetectionConfidence: 0.5,
-        minTrackingConfidence: 0.5
+        minTrackingConfidence: 0.5,
     })
     .add([
         new controls.StaticText({ title: 'MediaPipe Hands' }),
